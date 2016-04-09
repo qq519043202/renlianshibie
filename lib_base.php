@@ -8,7 +8,8 @@ function detection()
     $testurl = 'https://v1-api.visioncloudapi.com/face/detection';    
 
     $filePath = $_FILES['image']['tmp_name'] ; //照片路径
-	$fileContent = new \CURLFile( $filePath);
+	//$fileContent = new \CURLFile( $filePath);
+	$fileContent = '@' . realpath($filePath);
 
 	$post_data = array ( 'api_id' => api_id , 'api_secret' => api_secret ,
 		'file' => $fileContent);
