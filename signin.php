@@ -2,6 +2,7 @@
 
 require("./lib_base.php");
 require("./Response.php");
+// require './test.php';
 
 $faces = detection();
 $face_id = $faces[0]["face_id"];

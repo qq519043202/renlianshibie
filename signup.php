@@ -1,7 +1,7 @@
 <?php
 require("./lib_base.php");
 require("./Response.php");
-
+// require './test.php';
 $R = new Response();
 
 $faces = detection();
